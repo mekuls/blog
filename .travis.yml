@@ -7,6 +7,9 @@ before_install:
 - docker pull jekyll/jekyll:pages
 - docker run -v "$PWD:/app" jekyll/jekyll:pages  /bin/bash -c "jekyll build --source /app --destination /app/_site"
 
+script:
+    echo "Build is running... "
+
 deploy:
   provider: s3
   access_key_id: "$AWS_ACCESS_KEY_ID"
