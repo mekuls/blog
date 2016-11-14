@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<meta name="description" 
+    {% if page.title == "Home" %}
+      content="{{ site.data.brume.description }}" {% else %}
+      content="{{ page.content | strip_html | strip_newlines | truncate: 120 }}" 
+      {% endif %}>
+<meta name="author" content="{{ site.data.brume.author }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>{{ page.title }} &middot; {{ site.data.brume.name }}</title>
+<link rel="shortcut icon" href="{{site.baseurl}}/public/images/favicon.ico" />
+<link rel="stylesheet" href="{{site.baseurl}}/public/css/bootstrap.css">
+<link rel="stylesheet" href="{{site.baseurl}}/public/css/main.css">
+<link rel="stylesheet" href="{{site.baseurl}}/public/css/font-awesome.min.css">
+<link rel="alternate" href="{{ site.url }}{{ site.baseurl }}/feed.xml" type="application/rss+xml" title="{{ site.name }}">
+<script type="text/javascript" src="{{site.baseurl}}/public/js/slideout.js"></script>
+<script>
+  var slideout = new Slideout({
+    'panel': document.getElementById('panel'),
+    'menu': document.getElementById('menu'),
+    'padding': 256,
+    'tolerance': 70
+  });
+</script>

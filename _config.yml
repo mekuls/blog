@@ -1,0 +1,5 @@
+highlighter: rouge
+permalink: /:year/:month/:day/:title/index.html
+
+url:
+baseurl:
