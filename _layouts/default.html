@@ -4,24 +4,8 @@
     {% include head.html %}
   </head>
   <body>
-    <div class="site-wrapper">
-      <header class="main-header" style="background-color #AAAAAA">
-        <div class="vertical">
-          <div class="main-header-content inner">
-            <a href="https://github.com/mekuls">
-              <span class="fa fa-github" style="color:white;font-size:2em"></span>
-            </a>
-            &nbsp;
-            <a class="bloglogo" href="https://twitter.com/mekuls">
-              <span class="fa fa-twitter" style="color:white;font-size:2em"></span>
-            </a>
-            <h1 class="page-title">mekuls</h1>
-            <h2 class="page-description">stories in software</h2>
-        </div>
+      <div class="container">
+        {{content}}
       </div>
-      <a class="scroll-down icon-arrow-left" href="#content"><span class="hidden">Scroll Down</span></a>
-      </header>
-    </div>
-    {{ content }}
   </body>
 </html>

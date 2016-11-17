@@ -1,5 +1,4 @@
 highlighter: rouge
 permalink: /:year/:month/:day/:title/index.html
 
-url:
-baseurl:
+url: http://mekuls.net
